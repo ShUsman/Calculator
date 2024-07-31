@@ -44,10 +44,10 @@ function removeSimbol() {
     } else if (a.length > 1 && operation === '' && b === '') {
         a = a.slice(0, -1);
     } else if (a !== '' && operation !== '' && b === '') {
-        operation.slice(0, -1);
-    } do {
+        operation = operation.slice(0, -1);
+    } else {
         b = b.slice(0, -1);
-    } while (b.length < 0);
+    }
     updateDisplay();
 }
 
@@ -57,6 +57,7 @@ erase.addEventListener('click', e => {
 
 function updateDisplay() {
     display.textContent = `${a} ${operation} ${b}`;
+    console.log(operation);
 }
 
 buttons.forEach(button => {

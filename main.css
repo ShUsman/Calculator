@@ -32,7 +32,7 @@ body {
     grid-template-rows: repeat(5, 60px);
 }
 
-.calc-button {
+.calc-button, #erase {
     width: 55px;
     height: 55px;
     border-color: #5becaf;
